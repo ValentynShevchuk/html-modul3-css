@@ -1,3 +1,11 @@
+# added manually
+.DS_Store
+.vscode
+.idea
+.env
+build/
+*.psd
+
 # Logs
 logs
 *.log
