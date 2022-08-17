@@ -9,9 +9,11 @@
     --primary-text-color: rgba(0, 0, 0, 0.8);
     --title-text-color: #000000;
     --accent-color: #18A0FB;
+    --primary-bg-color: #FFFFFF;
+    --bg-color: #F5F5F5;
 }
 body {
-    background-color: #FFFFFF;
+    background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
 }
 .logo {
@@ -47,4 +49,15 @@ body {
 }
 .features-list .link {
     color: var(--accent-color);
+}
+/* Приклади */
+.work-list .title {
+    color: var(--title-text-color);
+}
+/* Vidguki */
+/* ------ */
+/* Button */
+.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-bg-color);
 }
