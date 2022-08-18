@@ -18,8 +18,11 @@ body {
 
     font-family: Montserrat, sans-serif;
 }
+
+/* Logo */
 .logo {
     color: var(--title-text-color);
+    font-family: Comfortaa, sans-serif;
 }
 .logo:hover, .logo:focus {
     color: var(--accent-color);
