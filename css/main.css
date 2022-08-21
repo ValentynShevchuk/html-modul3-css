@@ -17,6 +17,9 @@ body {
     color: var(--primary-text-color);
 
     font-family: Montserrat, sans-serif;
+    /* font-style: normal; закоментив, бо нормал іде по замовчуванню в браузерах*/
+    font-size: 18px;
+    line-height: 1.67;
     letter-spacing: -0.015em;
 }
 
@@ -27,7 +30,9 @@ body {
 
 font-size: 28px;
 line-height: 1.14;
+text-decoration: none;
 }
+
 .logo:hover, .logo:focus {
     color: var(--accent-color);
 }
@@ -39,16 +44,11 @@ line-height: 1.14;
 /* site-nav */
 .site-nav .link {
     color: var(--accent-color);
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 18px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.015em;
-
+    
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -57,32 +57,58 @@ letter-spacing: -0.015em;
 /* Hero */
 .hero-title {
     color: var(--title-text-color);
+    
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.43;
+    text-align: center;
 }
 /* Section */
 .section-title {
     color: var(--title-text-color);
+
+    
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
 }
-/* Features */
-.features-list .title {
+/* Features */ /* Приклади */
+.features-list .title, .work-list .title {
     color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
 }
+
+/* .features-list .text {
+    font-size: 18px;
+    line-height: 1.67;}
+    закоментив, так як ці всі абзаци однакові на сторінці,
+    і є її основним текстом, тому значення розміру тексту і висоти лінії залили 
+    в боді*/
+
 /* .features-list .link {
     color: var(--accent-color);
 } закоментив, бо заміняємо колір властивочтями button secondary*/
-/* Приклади */
-.work-list .title {
-    color: var(--title-text-color);
+
+.section-description {
+    font-size: 36px;
+    line-height: 1.39;
 }
+
 /* Vidguki */
 /* ------ */
 /* Button */
 .button {
     color: var(--title-text-color);
     background-color: var(--primary-white-color);
-    /* font-size: 24px;
-    padding: 12px 24px;
-    display: inline-block;
-    border: 1px solid black; */
+    
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    text-decoration: none;
 }
 .button.primary {
     color: var(--primary-white-color);
