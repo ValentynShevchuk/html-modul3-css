@@ -6,14 +6,16 @@
   --bg-color: #f5f5f5;
 }
 /*-------- Загальний глобальний бокс-сайзинг бордер-бокс --------*/
-html {
+/* html {
   box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
+} */
+/*----- Закоментив текст вище, бо це правило встановлено через модерн-нормалайз -----*/
+
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -23,6 +25,8 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: -0.015em;
+  /* ---задаємо маржин 0 для боді, щоб не використовувався той, що йде по замовчуванню в агенті браузера ----*/
+  margin: 0;
 }
 
 .btn {
@@ -33,6 +37,7 @@ body {
   text-decoration: none;
   border: 5px solid tomato;
   border-radius: 5px;
+  vertical-align: middle;
 }
 .btn:hover,
 .btn:focus {
@@ -44,5 +49,23 @@ body {
   display: inline-block;
   height: 20px;
   width: 20px;
+  margin-right: 6px;
   background-color: yellow;
+  vertical-align: middle;
+  font-size: 10px;
+  color: #000000;
+  line-height: 2;
+  text-align: center;
+}
+.btn-icon:hover,
+.btn-icon:focus {
+  background-color: red;
+}
+.container {
+  width: 1230px;
+  background-color: tomato;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 12px;
 }

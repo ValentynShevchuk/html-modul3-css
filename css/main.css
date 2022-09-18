@@ -21,15 +21,12 @@
 *::after {
   box-sizing: inherit;
 } */
-.box {
+/*----- Закоментив текст вище, бо це правило встановлено через модерн-нормалайз -----*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
   outline: 2px solid tomato;
-  padding: 20px;
-  margin: 20px;
-  background-color: teal;
-}
-.sect {
-  background-color: tomato;
-  margin: 20px 10px;
+  width: 1320px;
 }
 
 body {
@@ -60,9 +57,14 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
-/* site-nav */
+/* ----------Page-header ----------*/
+.page-header {
+  background-color: var(--primary-white-color);
+}
+/*------------ site-nav -----------*/
 .site-nav .link {
   color: var(--accent-color);
 
@@ -76,13 +78,17 @@ body {
   color: var(--title-text-color);
 }
 /* Hero */
+.hero {
+  text-align: center;
+}
 .hero-title {
   color: var(--title-text-color);
-
   font-weight: 400;
   font-size: 56px;
   line-height: 1.43;
-  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  outline: 1px solid tomato;
 }
 /* Section */
 .section-title {
@@ -123,23 +129,26 @@ body {
 /* ------ */
 /* Button */
 .button {
-  color: var(--title-text-color);
-  background-color: var(--primary-white-color);
-
+  display: inline-block;
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
   text-decoration: none;
+  border-radius: 6px;
+  min-width: 130px;
+  text-align: center;
+  border: 1px solid transparent;
 }
 .button.primary {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  /* border-color: transparent; */
+  padding: 11px 34px;
 }
 .button.secondary {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
-  /* border-color: var(--accent-color); */
+  padding: 11px 42px;
+  border-color: var(--accent-color);
 }
 .button:hover,
 .button:focus {
