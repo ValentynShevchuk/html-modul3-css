@@ -11,6 +11,7 @@
   --accent-color: #18a0fb;
   --primary-white-color: #ffffff;
   --bg-color: #f5f5f5;
+  --primary-bg-color: #ffffff;
 }
 /*-------- Загальний глобальний бокс-сайзинг бордер-бокс --------*/
 /* html {
@@ -25,6 +26,8 @@
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   outline: 2px solid tomato;
   width: 1320px;
 }
@@ -92,7 +95,7 @@ body {
 }
 /* Section */
 .section {
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 .section-title {
@@ -103,7 +106,7 @@ body {
   font-size: 48px;
   line-height: 1.5;
 }
-/* Features */ /* Приклади */
+/* Features */
 .features-list .title,
 .work-list .title {
   color: var(--title-text-color);
@@ -117,8 +120,22 @@ body {
   margin-top: 0;
   margin-bottom: 30px;
 }
-.centered {
+.section-title.centered {
   text-align: center;
+}
+
+/* Приклади */
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.work-list > .item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.work-list > .item:nth-child(2n) {
+  background-color: var(--bg-color);
 }
 /* .features-list .text {
     font-size: 18px;
@@ -134,6 +151,8 @@ body {
 .section-description {
   font-size: 36px;
   line-height: 1.39;
+  margin-top: 0;
+  margin-bottom: 80px;
 }
 
 /* Vidguki */
