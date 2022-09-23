@@ -66,8 +66,16 @@ body {
 .page-header {
   background-color: var(--primary-white-color);
 }
+/* -------Main Nav------ */
+.main-nav {
+  display: flex;
+}
 /*------------ site-nav -----------*/
 .site-nav .link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
   color: var(--accent-color);
   font-weight: 500;
   font-size: 15px;
@@ -77,13 +85,32 @@ body {
 .site-nav {
   display: flex;
 }
-.site-nav li {
-  margin-right: 40px;
+
+/* -------Різні варіанти задавати маржини, окрім останнього-------
+ .site-nav .item:last-child {
+  margin-right: 0;
+} */
+/* .site-nav .item:not(:last-child) {
+  margin-right: 40px; - такий варіант самий сучасний, якщо порівнювати з наведеним вище
+} */
+
+/* Суть наступного коду в тому, що всім елементам, e яких перед ними є елемент (сусід) 
+з класом item надається параметр, який ми прописали. в даному випадку мардин 
+лефт 40 пікселів буде у всіх крім самого першого елементу списку. */
+.site-nav .item + .item {
+  margin-left: 40px;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--title-text-color);
+}
+/* ----Auth-nav------ */
+.auth-nav {
+  display: flex;
+}
+.auth-nav .item + .item {
+  margin-left: 12px;
 }
 
 /* Hero */
