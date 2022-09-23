@@ -47,7 +47,6 @@ body {
 .logo {
   color: var(--title-text-color);
   font-family: Comfortaa, sans-serif;
-
   font-size: 28px;
   line-height: 1.14;
   text-decoration: none;
@@ -70,16 +69,23 @@ body {
 /*------------ site-nav -----------*/
 .site-nav .link {
   color: var(--accent-color);
-
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
   text-decoration: none;
 }
+.site-nav {
+  display: flex;
+}
+.site-nav li {
+  margin-right: 40px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--title-text-color);
 }
+
 /* Hero */
 .hero {
   text-align: center;
