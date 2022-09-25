@@ -23,14 +23,6 @@
   box-sizing: inherit;
 } */
 /*----- Закоментив текст вище, бо це правило встановлено через модерн-нормалайз -----*/
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  outline: 2px solid tomato;
-  width: 1320px;
-}
 
 body {
   background-color: var(--primary-bg-color);
@@ -41,6 +33,22 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: -0.015em;
+}
+
+/* -------Утиліти----------- */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: 2px solid tomato;
+  width: 1320px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Logo */
@@ -57,11 +65,6 @@ body {
   color: var(--accent-color);
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 /* ----------Page-header ----------*/
 .page-header {
   background-color: var(--primary-white-color);
@@ -69,7 +72,9 @@ body {
 /* -------Main Nav------ */
 .main-nav {
   display: flex;
+  align-items: center;
 }
+
 /*------------ site-nav -----------*/
 .site-nav .link {
   display: block;
@@ -84,6 +89,7 @@ body {
 }
 .site-nav {
   display: flex;
+  margin-left: 70px;
 }
 
 /* -------Різні варіанти задавати маржини, окрім останнього-------
@@ -108,6 +114,7 @@ body {
 /* ----Auth-nav------ */
 .auth-nav {
   display: flex;
+  margin-left: auto;
 }
 .auth-nav .item + .item {
   margin-left: 12px;
@@ -140,6 +147,16 @@ body {
   line-height: 1.5;
 }
 /* Features */
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-list .item {
+  width: 300px;
+  background-color: tomato;
+}
+
 .features-list .title,
 .work-list .title {
   color: var(--title-text-color);
@@ -232,3 +249,34 @@ color: var(--title-text-color);
 .wireframes-link:focus {
   color: var(--title-text-color);
 }
+.test-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: teal;
+}
+.flex-element {
+  width: 380px;
+  background-color: tomato;
+  margin-right: 30px;
+  margin-bottom: 30px; */
+}
+ .flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+.flex-element:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+/* ----Альтернатива, але тоді треба не ставити в .flex-element маржини!!!! -----
+.flex-element:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.flex-element:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+} */
