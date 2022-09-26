@@ -328,13 +328,12 @@ body {
   margin: 120px 84px 120px 80px;
   width: 943px;
 }
-.signup-button .button {
-  min-width: 192px;
-}
 .signup-button .button.primary {
+  min-width: 192px;
   margin: 144px 45px 144px 0;
 }
 .signup-button .button.secondary {
+  min-width: 192px;
   margin: 144px 144px 144px 0;
 }
 /* -------------------Button --------------------*/
