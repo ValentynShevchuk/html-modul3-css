@@ -69,3 +69,42 @@ body {
   padding-right: 15px;
   font-size: 12px;
 }
+
+.test-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: teal;
+  margin: -15px;
+}
+
+/* calc (100% - (сума маржинів між елементами - 
+значення одного маржина(бо завжди йде на один маржин меньше)) / 
+кількість елементів в рядку ) */
+.flex-element {
+  background-color: tomato;
+  margin: 15px;
+  width: 380px;
+  /* width: calc((100% - 2 * 30px) / 3); */
+  /* margin-right: 30px;
+  margin-bottom: 30px; */
+}
+/* .flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+.flex-element:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} */
+/* ----Альтернатива, але тоді треба не ставити в .flex-element маржини!!!! -----
+.flex-element:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.flex-element:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+} */

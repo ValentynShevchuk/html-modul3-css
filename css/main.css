@@ -42,7 +42,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   outline: 2px solid tomato;
-  width: 1320px;
+  width: 1680px;
 }
 
 .list {
@@ -58,6 +58,7 @@ body {
   font-size: 28px;
   line-height: 1.14;
   text-decoration: none;
+  margin-left: 80px;
 }
 
 .logo:hover,
@@ -145,16 +146,40 @@ body {
   font-weight: 400;
   font-size: 48px;
   line-height: 1.5;
+  margin-left: 80px;
 }
-/* Features */
+/* ______________Features_________________ */
+
+/* -----Верстка Репети---- */
+/* .features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -40px -74px;
+}
+
+.features-list .item {
+  background-color: tomato;
+  margin: 40px 74px;
+  width: 625px;
+} */
+/* моя верстка пробна самостійна */
 .features-list {
   display: flex;
   flex-wrap: wrap;
 }
 
 .features-list .item {
-  width: 300px;
-  background-color: tomato;
+  width: calc((100% - 308px) / 2);
+  /* background-color: tomato; */
+}
+
+.features-list .item:nth-child(2n + 1) {
+  margin-left: 80px;
+}
+
+.features-list .item:nth-child(2n) {
+  margin-left: 148px;
+  margin-right: 80px;
 }
 
 .features-list .title,
@@ -170,23 +195,10 @@ body {
   margin-top: 0;
   margin-bottom: 30px;
 }
-.section-title.centered {
+.centered {
   text-align: center;
 }
 
-/* Приклади */
-
-.section.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.work-list > .item {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-.work-list > .item:nth-child(2n) {
-  background-color: var(--bg-color);
-}
 /* .features-list .text {
     font-size: 18px;
     line-height: 1.67;}
@@ -198,16 +210,134 @@ body {
     color: var(--accent-color);
 } закоментив, бо заміняємо колір властивочтями button secondary*/
 
+/* --------------Приклади ----------------*/
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* .work-list > .item .image:nth-child(2n) {
+  margin-right: 80px;
+} */
+/* ----------Верстка Репети------------- */
+.work-list > .item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  display: flex;
+  align-items: center;
+}
+.work-list > .item:nth-child(2n) {
+  background-color: var(--bg-color);
+  flex-direction: row-reverse;
+}
+.work-list > .item:nth-child(2n + 1) > .content {
+  margin-left: 84px;
+  margin-right: 80px;
+}
+.work-list > .item:nth-child(2n) > .content {
+  margin-right: 84px;
+  margin-left: 80px;
+}
+.work-list > .item:nth-child(2n + 1) > .image {
+  margin: 80px 0 80px 80px;
+}
+.work-list > .item:nth-child(2n) > .image {
+  margin: 80px 80px 80px 0;
+}
+/* -------------Моя самостійна пробна верстка----------- */
+/* .item.reverse {
+  flex-direction: row-reverse;
+}
+.content1 {
+  display: block;
+  margin-left: 84px;
+  margin-right: 80px;
+}
+.content2 {
+  display: block;
+  margin-left: 80px;
+  margin-right: 84px;
+}
+.work-image1 {
+  margin: 80px 0 80px 80px;
+}
+.work-image2 {
+  margin: 80px 80px 80px 0;
+} */
+.work-list > .item:nth-child(2n + 1) > .image {
+  margin: 80px 0 80px 80px;
+}
+.work-list > .item:nth-child(2n) > .image {
+  margin: 80px 80px 80px 0;
+}
+/* ---------------Vidguki -----------------------*/
 .section-description {
   font-size: 36px;
   line-height: 1.39;
   margin-top: 0;
   margin-bottom: 80px;
 }
+/* ----------Верстка Репети------------- */
+.review-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1020px;
+  margin: -30px -40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.review-list li {
+  margin: 30px 40px;
+}
+/* -------------Моя самостійна пробна верстка----------- */
+/* .review-container {
+  margin-bottom: 120px;
+  outline: 2px solid blue;
+  width: inherit;
+} */
+/* .review-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc((100% - 84px * 3) / 4);
+  margin-left: 0;
+} */
+/* .review-list .item:not:nth-child (4n) {
+  margin-right: 84px;
+} */
 
-/* Vidguki */
 /* ------ */
-/* Button */
+/* .review-container {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* -------------------Signup --------------------*/
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.signup-button {
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+.signup .section-description {
+  margin: 120px 84px 120px 80px;
+  width: 943px;
+}
+.signup-button .button {
+  min-width: 192px;
+}
+.signup-button .button.primary {
+  margin: 144px 45px 144px 0;
+}
+.signup-button .button.secondary {
+  margin: 144px 144px 144px 0;
+}
+/* -------------------Button --------------------*/
 .button {
   display: inline-block;
   font-weight: 500;
@@ -249,34 +379,3 @@ color: var(--title-text-color);
 .wireframes-link:focus {
   color: var(--title-text-color);
 }
-.test-container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: teal;
-}
-.flex-element {
-  width: 380px;
-  background-color: tomato;
-  margin-right: 30px;
-  margin-bottom: 30px; */
-}
- .flex-element:nth-child(3n) {
-  margin-right: 0;
-}
-.flex-element:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-/* ----Альтернатива, але тоді треба не ставити в .flex-element маржини!!!! -----
-.flex-element:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-.flex-element:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-} */
