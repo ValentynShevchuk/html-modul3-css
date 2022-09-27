@@ -404,9 +404,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   /* align-items: center; */
-  margin-top: 120px;
-  margin-bottom: 103px;
-  /* outline: 2px solid green; */
+  padding-top: 120px;
+  padding-bottom: 103px;
+  outline: 2px solid green;
 }
 .footer-section {
   width: 557px;
@@ -442,10 +442,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 80px;
-  margin-left: 80px;
-  margin-bottom: 130px;
-  /* outline: 2px solid yellow; */
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-bottom: 130px;
+  outline: 2px solid yellow;
 }
 .social {
   display: flex;
