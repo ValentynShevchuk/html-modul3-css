@@ -41,7 +41,7 @@ body {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   width: 1680px;
 }
 
@@ -49,6 +49,19 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* Logo */
@@ -323,18 +336,25 @@ body {
   display: flex;
   margin-left: auto;
   justify-content: flex-end;
+  /* outline: 2px solid black; */
+}
+.signup-button .button + .button {
+  margin-left: 45px;
 }
 .signup .section-description {
-  margin: 120px 84px 120px 80px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  margin-right: 84px;
+  margin-left: 80px;
   width: 943px;
 }
-.signup-button .button.primary {
+.signup-button .button {
   min-width: 192px;
-  margin: 144px 45px 144px 0;
+  margin-top: 144px;
+  margin-bottom: 144px;
 }
 .signup-button .button.secondary {
-  min-width: 192px;
-  margin: 144px 144px 144px 0;
+  margin-right: 144px;
 }
 /* -------------------Button --------------------*/
 .button {
@@ -363,18 +383,78 @@ body {
 .button:focus {
   color: var(--title-text-color);
 }
-/* .button.primary:hover, .button.primary:focus, .button.secondary:hover, .button.secondary:focus {
-    color: var(--title-text-color);
-}  */
-/* .button.secondary:hover, .button.secondary:focus {
-color: var(--title-text-color);
-}
-*/
-.wireframes-link {
+
+/* ------------------wireframes-link----------------- */
+/* .wireframes-link {
   text-decoration: none;
   color: var(--accent-color);
 }
 .wireframes-link:hover,
 .wireframes-link:focus {
   color: var(--title-text-color);
+} */
+/* ---------------------------------FOOTER by myself------------------  */
+/* .page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+} */
+
+.top-footer {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  margin-top: 120px;
+  margin-bottom: 103px;
+  /* outline: 2px solid green; */
+}
+.footer-section {
+  width: 557px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo {
+  margin-right: auto;
+  align-self: baseline;
+}
+.footer-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: calc(24 / 15);
+}
+.footer-nav {
+  margin-left: 63px;
+  margin-right: 80px;
+}
+.footer-nav .item + .item {
+  margin-top: 16px;
+}
+.footer-link {
+  font-size: 15px;
+  line-height: calc(24 / 15);
+}
+.copyright,
+.label {
+  margin: 0;
+}
+.down-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-bottom: 130px;
+  /* outline: 2px solid yellow; */
+}
+.social {
+  display: flex;
+}
+.social .list {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.social .item + .item {
+  margin-left: 21px;
 }
