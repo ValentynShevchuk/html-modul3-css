@@ -13,6 +13,21 @@
   --bg-color: #f5f5f5;
   --primary-bg-color: #ffffff;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
 /*-------- Загальний глобальний бокс-сайзинг бордер-бокс --------*/
 /* html {
     box-sizing: border-box;
@@ -41,7 +56,7 @@ body {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
   width: 1680px;
 }
 
@@ -134,7 +149,7 @@ body {
   margin-left: 12px;
 }
 
-/* Hero */
+/* --------------------------Hero ----------------------------------*/
 .hero {
   text-align: center;
 }
@@ -147,7 +162,7 @@ body {
   margin-bottom: 40px;
   outline: 1px solid tomato;
 }
-/* Section */
+/*----------------- Section --------------------------*/
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -330,32 +345,45 @@ body {
 .signup {
   display: flex;
   align-items: center;
-  justify-content: start;
+  /* justify-content: space-between; */
+  padding-left: 80px;
+  padding-right: 144px;
 }
-.signup-button {
+.signup-section {
+  background-color: var(--bg-color);
+  /* padding-left: 80px;
+  padding-right: 144px; */
+}
+.signup .button {
+  min-width: 192px;
+}
+.signup .button.primary {
+  margin-left: 84px;
+  margin-right: 45px;
+}
+/* .signup-button {
   display: flex;
   margin-left: auto;
   justify-content: flex-end;
-  /* outline: 2px solid black; */
-}
-.signup-button .button + .button {
+  outline: 2px solid black;
+} */
+/* .signup .button + .button {
   margin-left: 45px;
-}
+} */
 .signup .section-description {
-  margin-top: 120px;
-  margin-bottom: 120px;
-  margin-right: 84px;
-  margin-left: 80px;
-  width: 943px;
+  padding: 0;
+  margin: 0;
+  display: block;
 }
-.signup-button .button {
+/* .signup-button {
   min-width: 192px;
-  margin-top: 144px;
-  margin-bottom: 144px;
-}
-.signup-button .button.secondary {
-  margin-right: 144px;
-}
+  padding-top: 0;
+  padding-bottom: 0;
+  align-items: center;
+   padding: 0;
+  margin-left: 84px;
+} */
+
 /* -------------------Button --------------------*/
 .button {
   display: inline-block;
@@ -399,7 +427,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
 } */
-
+.page-footer.container {
+  padding: 0;
+}
 .top-footer {
   display: flex;
   flex-wrap: wrap;
